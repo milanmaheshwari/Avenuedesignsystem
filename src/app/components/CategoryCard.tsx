@@ -1,3 +1,4 @@
+import React from 'react';
 import { assets } from "../../utils/assets";
 import svgPathsMusicLarge from "../../imports/svg-30bgdzpzro";
 import svgPathsMusicSmall from "../../imports/svg-21ulgngdfx";
