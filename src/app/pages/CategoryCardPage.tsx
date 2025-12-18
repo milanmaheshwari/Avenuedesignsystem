@@ -109,7 +109,7 @@ export default function CategoryCardPage() {
                   minHeight: '480px',
                 }}
               >
-                <div className="rounded-xl overflow-visible">
+                <div className="rounded-[20px] overflow-visible">
                   {currentVariant.component}
                 </div>
               </div>

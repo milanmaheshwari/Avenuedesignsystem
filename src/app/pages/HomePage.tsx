@@ -5,6 +5,7 @@ import CategoryCard from "../components/CategoryCard";
 import AddItem from "../components/AddItem";
 import AppNavBar from "../components/AppNavBar";
 import ArtistCard from "../components/ArtistCard";
+import Card from "../components/Card";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -44,6 +45,13 @@ export default function HomePage() {
       path: "/components/artist-card",
       preview: <ArtistCard type="music" size="small" />,
       previewScale: 1.2,
+    },
+    {
+      name: "Card",
+      description: "Event card component with Default and Trending variants in multiple sizes",
+      path: "/components/card",
+      preview: <Card size="Small" type="Default" />,
+      previewScale: 1.0,
     },
     // Add more components here as they are created
   ];

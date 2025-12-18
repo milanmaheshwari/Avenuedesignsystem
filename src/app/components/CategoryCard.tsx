@@ -193,12 +193,12 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
         height: isLarge ? '360px' : '240px',
         backgroundImage: isLarge ? config.gradient : config.gradientSmall,
         borderRadius: isLarge ? '20px' : '12px',
-        boxShadow: `0px 0px 20px 5px ${config.shadowColor}`,
+        boxShadow: isLarge && theme === 'music' ? 'none' : `0px 0px 20px 5px ${config.shadowColor}`,
       }}
     >
       {/* Background Image */}
       <div 
-        className="absolute overflow-clip rounded-lg" 
+        className="absolute overflow-clip rounded-[20px]" 
         style={{
           width: isLarge ? '292px' : '156px',
           height: isLarge ? '360px' : '240px',
@@ -208,18 +208,18 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
           zIndex: 1,
         }}
       >
-        <div 
-          className="absolute" 
-          style={{
-            width: isLarge ? '220px' : '124px',
-            height: isLarge ? '220px' : '124px',
-            left: isLarge && theme === 'music' ? '50%' : isLarge ? 'calc(50% + 4px)' : '50%',
-            top: isLarge ? 'calc(50% + 54px)' : 'auto',
-            bottom: isLarge ? 'auto' : '16px',
-            transform: isLarge ? 'translate(-50%, -50%)' : 'translateX(-50%)',
-            boxShadow: '0px 20px 40px rgba(10,10,10,0.5)',
-          }}
-        >
+      <div 
+        className="absolute" 
+        style={{
+          width: isLarge ? '240px' : '124px',
+          height: isLarge ? '240px' : '124px',
+          left: isLarge && theme === 'music' ? '50%' : isLarge ? 'calc(50% + 4px)' : '50%',
+          top: isLarge ? 'calc(50% + 54px)' : 'auto',
+          bottom: isLarge ? 'auto' : '16px',
+          transform: isLarge ? 'translate(-50%, -50%)' : 'translateX(-50%)',
+          boxShadow: 'none',
+        }}
+      >
           <img 
             alt={config.title} 
             className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
@@ -238,10 +238,11 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
           gap: isLarge ? '12px' : '8px',
           padding: isLarge ? '20px' : '12px',
           left: '0',
-          right: isLarge && theme === 'music' ? '-8px' : '0',
+          right: '0',
           top: isLarge && theme === 'night-parties' ? '0' : isLarge && theme === 'sports' ? 'calc(50% - 112px)' : isLarge ? 'calc(50% - 112px)' : '0',
           transform: isLarge && theme === 'music' ? 'translateY(-50%)' : isLarge && theme === 'sports' ? 'translateY(-50%)' : 'none',
           zIndex: 2,
+          width: theme === 'music' ? (isLarge ? '156px' : '100%') : undefined,
         }}
       >
         {/* Title */}
@@ -264,7 +265,7 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
         </div>
 
         {/* Subtitle */}
-        <div className="w-full overflow-clip">
+        <div className="w-full overflow-clip" style={{ width: isLarge && theme === 'music' ? '100%' : undefined }}>
           <p 
             style={{ 
               color: config.textColor,
@@ -272,6 +273,7 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
               fontWeight: 'var(--font-weight-normal)',
               fontSize: isLarge ? '16px' : '13px',
               lineHeight: isLarge ? '22px' : '18px',
+              width: isLarge && theme === 'music' ? '100%' : undefined,
             }}
           >
             {isLarge ? config.descriptionLarge : config.descriptionSmall}

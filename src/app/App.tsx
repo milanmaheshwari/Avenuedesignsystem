@@ -5,6 +5,7 @@ import CategoryCardPage from "./pages/CategoryCardPage";
 import AddItemPage from "./pages/AddItemPage";
 import AppNavBarPage from "./pages/AppNavBarPage";
 import ArtistCardPage from "./pages/ArtistCardPage";
+import CardPage from "./pages/CardPage";
 // Design Token Pages
 import ColorsPage from "./pages/tokens/ColorsPage";
 import TypographyPage from "./pages/tokens/TypographyPage";
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/components/add-item" element={<AddItemPage />} />
         <Route path="/components/app-nav-bar" element={<AppNavBarPage />} />
         <Route path="/components/artist-card" element={<ArtistCardPage />} />
+        <Route path="/components/card" element={<CardPage />} />
         
         {/* Design token documentation pages */}
         <Route path="/tokens/colors" element={<ColorsPage />} />
