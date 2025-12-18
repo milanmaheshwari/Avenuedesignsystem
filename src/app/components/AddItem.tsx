@@ -1,4 +1,5 @@
 import { assets } from "../../utils/assets";
+import { typography, radius, semanticColors } from "../utils/theme";
 
 export type AddItemSize = 'large' | 'small';
 
@@ -91,8 +92,8 @@ export default function AddItem({
               <p 
                 style={{ 
                   color: 'rgba(250,250,250,0.9)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-bold)',
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.bold,
                   fontSize: isLarge ? '16px' : '14px',
                   lineHeight: isLarge ? '20px' : '18px',
                   letterSpacing: isLarge ? '-0.32px' : '-0.28px',
@@ -107,8 +108,8 @@ export default function AddItem({
               <p 
                 style={{ 
                   color: 'rgba(250,250,250,0.75)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-medium)',
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.medium,
                   fontSize: isLarge ? '14px' : '13px',
                   lineHeight: '18px',
                   whiteSpace: 'nowrap',
@@ -124,13 +125,13 @@ export default function AddItem({
         <div 
           className="flex items-start justify-center relative w-full"
           style={{
-            borderRadius: 'var(--radius-button)',
+            borderRadius: radius.button,
           }}
         >
           <div 
             className="basis-0 grow min-h-px min-w-px relative self-stretch"
             style={{
-              borderRadius: 'var(--radius-button)',
+              borderRadius: radius.button,
               backgroundImage: 'linear-gradient(90.0057deg, rgba(250, 250, 250, 0.05) 0%, rgba(250, 250, 250, 0.1) 50.01%, rgba(250, 250, 250, 0.05) 100%), linear-gradient(rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 0.05) 100%)',
             }}
           >
@@ -144,9 +145,9 @@ export default function AddItem({
                 <div className="relative shrink-0 text-center">
                   <p 
                     style={{ 
-                      color: 'var(--primary-foreground)',
-                      fontFamily: 'var(--font-satoshi)',
-                      fontWeight: 'var(--font-weight-bold)',
+                      color: semanticColors.primaryForeground,
+                      fontFamily: typography.fontFamily.primary,
+                      fontWeight: typography.fontWeight.bold,
                       fontSize: isLarge ? '16px' : '14px',
                       lineHeight: 1,
                       whiteSpace: 'nowrap',

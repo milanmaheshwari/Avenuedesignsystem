@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import svgPaths from "../../imports/svg-i2vkb4dk2q";
+import { typography, radius, semanticColors } from "../utils/theme";
 
 export type TabId = 'home' | 'events' | 'tickets' | 'profile';
 
@@ -47,7 +48,7 @@ export default function AppNavBar({
       className="backdrop-blur backdrop-filter relative size-full" 
       style={{ 
         backgroundImage: "linear-gradient(76.2883deg, rgba(10, 10, 10, 0.75) 11.144%, rgba(10, 10, 10, 0.9) 89.969%)",
-        borderRadius: 'var(--radius-card)',
+        borderRadius: radius.card,
         overflow: 'hidden',
       }}
     >
@@ -55,8 +56,8 @@ export default function AppNavBar({
         aria-hidden="true" 
         className="absolute inset-0 pointer-events-none" 
         style={{ 
-          border: '1px solid var(--border)',
-          borderRadius: 'var(--radius-card)',
+          border: `1px solid ${semanticColors.border}`,
+          borderRadius: radius.card,
         }}
       />
       <div className="size-full">
@@ -83,14 +84,14 @@ export default function AppNavBar({
                         <rect 
                           height="31" 
                           rx="7.5" 
-                          stroke="var(--border)" 
+                          stroke={semanticColors.border} 
                           width="31" 
                           x="0.5" 
                           y="0.5" 
                         />
                         <path 
                           d={svgPaths[tab.pathKey]} 
-                          stroke={isActive ? "var(--primary)" : "var(--foreground)"} 
+                          stroke={isActive ? semanticColors.primary : semanticColors.foreground} 
                           strokeLinecap="round" 
                           strokeLinejoin="round" 
                           strokeOpacity={isActive ? "1" : "0.5"} 
@@ -106,8 +107,8 @@ export default function AppNavBar({
                           y1="-2.4" 
                           y2="37.2"
                         >
-                          <stop stopColor="var(--primary)" stopOpacity="0.25" />
-                          <stop offset="1" stopColor="var(--primary)" stopOpacity="0.05" />
+                          <stop stopColor={semanticColors.primary} stopOpacity="0.25" />
+                          <stop offset="1" stopColor={semanticColors.primary} stopOpacity="0.05" />
                         </linearGradient>
                         <linearGradient 
                           gradientUnits="userSpaceOnUse" 
@@ -117,8 +118,8 @@ export default function AppNavBar({
                           y1="-2.4" 
                           y2="37.2"
                         >
-                          <stop stopColor="var(--foreground)" stopOpacity="0.1" />
-                          <stop offset="1" stopColor="var(--foreground)" stopOpacity="0.05" />
+                          <stop stopColor={semanticColors.foreground} stopOpacity="0.1" />
+                          <stop offset="1" stopColor={semanticColors.foreground} stopOpacity="0.05" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -130,12 +131,12 @@ export default function AppNavBar({
                   <div 
                     className="flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-center w-full"
                     style={{
-                      fontFamily: 'var(--font-satoshi)',
-                      fontWeight: 'var(--font-weight-medium)',
+                      fontFamily: typography.fontFamily.primary,
+                      fontWeight: typography.fontWeight.medium,
                       fontSize: '12px',
                       letterSpacing: '1.2px',
                       textTransform: 'uppercase',
-                      color: isActive ? 'var(--primary)' : 'var(--secondary-foreground)',
+                      color: isActive ? semanticColors.primary : semanticColors.secondaryForeground,
                       lineHeight: '14px',
                     }}
                   >

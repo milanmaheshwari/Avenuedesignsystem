@@ -1,4 +1,5 @@
 import { assets } from "../../utils/assets";
+import { typography } from "../utils/theme";
 
 export type ArtistCardType = 'music' | 'comedy';
 export type ArtistCardSize = 'large' | 'small';
@@ -137,8 +138,8 @@ export default function ArtistCard({
             <div 
               className="flex flex-col justify-center relative shrink-0 w-full"
               style={{
-                fontFamily: 'var(--font-satoshi)',
-                fontWeight: 'var(--font-weight-bold)',
+                fontFamily: typography.fontFamily.primary,
+                fontWeight: typography.fontWeight.bold,
                 fontSize: config.titleSize,
                 lineHeight: config.titleLineHeight,
                 letterSpacing: config.titleTracking,
@@ -151,8 +152,8 @@ export default function ArtistCard({
             <div 
               className="flex flex-col justify-center relative shrink-0 w-full"
               style={{
-                fontFamily: 'var(--font-satoshi)',
-                fontWeight: 'var(--font-weight-normal)',
+                fontFamily: typography.fontFamily.primary,
+                fontWeight: typography.fontWeight.normal,
                 fontSize: config.genreSize,
                 lineHeight: config.genreLineHeight,
               }}

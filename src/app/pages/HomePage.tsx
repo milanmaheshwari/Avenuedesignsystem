@@ -6,6 +6,7 @@ import AddItem from "../components/AddItem";
 import AppNavBar from "../components/AppNavBar";
 import ArtistCard from "../components/ArtistCard";
 import Card from "../components/Card";
+import { typography, radius as radiusTokens, semanticColors } from "../utils/theme";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -89,8 +90,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-12">
-            <h1 className="mb-4" style={{ color: 'var(--foreground)' }}>Design System</h1>
-            <p style={{ color: 'var(--card-foreground)' }}>
+            <h1 className="mb-4" style={{ color: semanticColors.foreground }}>Design System</h1>
+            <p style={{ color: semanticColors.cardForeground }}>
               A collection of reusable components built with your team's design tokens.
               Each component includes interactive demos, specifications, and documentation.
             </p>
@@ -98,7 +99,7 @@ export default function HomePage() {
 
           {/* Components Section */}
           <div className="mb-12">
-            <h2 className="mb-6" style={{ color: 'var(--foreground)' }}>
+            <h2 className="mb-6" style={{ color: semanticColors.foreground }}>
               Components
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -111,9 +112,9 @@ export default function HomePage() {
                   <div
                     className="relative flex flex-col overflow-hidden transition-all duration-300 hover:scale-[1.02]"
                     style={{
-                      backgroundColor: 'var(--card)',
-                      border: '1px solid var(--border)',
-                      borderRadius: 'var(--radius-card)',
+                      backgroundColor: semanticColors.card,
+                      border: `1px solid ${semanticColors.border}`,
+                      borderRadius: radiusTokens.card,
                     }}
                   >
                     {/* Component Preview */}
@@ -121,7 +122,7 @@ export default function HomePage() {
                       className="flex items-center justify-center overflow-hidden pointer-events-none"
                       style={{
                         backgroundColor: 'rgba(10, 10, 10, 0.3)',
-                        borderBottom: '1px solid var(--border)',
+                        borderBottom: `1px solid ${semanticColors.border}`,
                         height: '200px',
                         padding: '24px',
                       }}
@@ -142,18 +143,18 @@ export default function HomePage() {
                         <h3
                           style={{
                             color: 'var(--foreground)',
-                            fontWeight: 'var(--font-weight-bold)',
+                            fontWeight: typography.fontWeight.bold,
                           }}
                         >
                           {component.name}
                         </h3>
                         <ArrowRight
                           className="transition-transform duration-300 group-hover:translate-x-1"
-                          style={{ color: 'var(--muted-foreground)' }}
+                          style={{ color: semanticColors.mutedForeground }}
                           size={20}
                         />
                       </div>
-                      <p style={{ color: 'var(--card-foreground)', fontSize: 'var(--text-base)' }}>
+                      <p style={{ color: semanticColors.cardForeground, fontSize: typography.fontSize.base }}>
                         {component.description}
                       </p>
                     </div>
@@ -163,7 +164,7 @@ export default function HomePage() {
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                       style={{
                         background: 'radial-gradient(circle at center, rgba(79, 70, 229, 0.05) 0%, transparent 70%)',
-                        borderRadius: 'var(--radius-card)',
+                        borderRadius: radiusTokens.card,
                       }}
                     />
                   </div>
@@ -174,7 +175,7 @@ export default function HomePage() {
 
           {/* Design Tokens Section */}
           <div className="mb-12">
-            <h2 className="mb-6" style={{ color: 'var(--foreground)' }}>
+            <h2 className="mb-6" style={{ color: semanticColors.foreground }}>
               Design Tokens
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -187,9 +188,9 @@ export default function HomePage() {
                   <div
                     className="relative flex flex-col overflow-hidden transition-all duration-300 hover:scale-[1.02]"
                     style={{
-                      backgroundColor: 'var(--card)',
-                      border: '1px solid var(--border)',
-                      borderRadius: 'var(--radius-card)',
+                      backgroundColor: semanticColors.card,
+                      border: `1px solid ${semanticColors.border}`,
+                      borderRadius: radiusTokens.card,
                     }}
                   >
                     {/* Token Icon */}
@@ -197,7 +198,7 @@ export default function HomePage() {
                       className="flex items-center justify-center overflow-hidden pointer-events-none"
                       style={{
                         backgroundColor: 'rgba(10, 10, 10, 0.3)',
-                        borderBottom: '1px solid var(--border)',
+                        borderBottom: `1px solid ${semanticColors.border}`,
                         height: '200px',
                         padding: '24px',
                       }}
@@ -208,7 +209,7 @@ export default function HomePage() {
                           transformOrigin: 'center',
                         }}
                       >
-                        <token.icon size={40} style={{ color: 'var(--foreground)' }} />
+                        <token.icon size={40} style={{ color: semanticColors.foreground }} />
                       </div>
                     </div>
 
@@ -218,18 +219,18 @@ export default function HomePage() {
                         <h3
                           style={{
                             color: 'var(--foreground)',
-                            fontWeight: 'var(--font-weight-bold)',
+                            fontWeight: typography.fontWeight.bold,
                           }}
                         >
                           {token.name}
                         </h3>
                         <ArrowRight
                           className="transition-transform duration-300 group-hover:translate-x-1"
-                          style={{ color: 'var(--muted-foreground)' }}
+                          style={{ color: semanticColors.mutedForeground }}
                           size={20}
                         />
                       </div>
-                      <p style={{ color: 'var(--card-foreground)', fontSize: 'var(--text-base)' }}>
+                      <p style={{ color: semanticColors.cardForeground, fontSize: typography.fontSize.base }}>
                         {token.description}
                       </p>
                     </div>
@@ -239,7 +240,7 @@ export default function HomePage() {
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                       style={{
                         background: 'radial-gradient(circle at center, rgba(79, 70, 229, 0.05) 0%, transparent 70%)',
-                        borderRadius: 'var(--radius-card)',
+                        borderRadius: radiusTokens.card,
                       }}
                     />
                   </div>
@@ -252,15 +253,15 @@ export default function HomePage() {
           <div
             className="mt-12 p-6 rounded-lg"
             style={{
-              backgroundColor: 'var(--muted)',
-              border: '1px solid var(--border)',
-              borderRadius: 'var(--radius-card)',
+              backgroundColor: semanticColors.muted,
+              border: `1px solid ${semanticColors.border}`,
+              borderRadius: radiusTokens.card,
             }}
           >
-            <h4 className="mb-2" style={{ color: 'var(--foreground)' }}>
+            <h4 className="mb-2" style={{ color: semanticColors.foreground }}>
               About This Design System
             </h4>
-            <p className="mb-4" style={{ color: 'var(--muted-foreground)' }}>
+            <p className="mb-4" style={{ color: semanticColors.mutedForeground }}>
               All components use design tokens defined in your theme.css file. Update the CSS variables
               to change colors, typography, spacing, and more across all components.
             </p>
@@ -268,8 +269,8 @@ export default function HomePage() {
               onClick={() => navigate('/tokens/mapping')}
               className="inline-flex items-center gap-2 transition-colors hover:underline"
               style={{ 
-                color: 'var(--primary)',
-                fontSize: 'var(--text-base)',
+                color: semanticColors.primary,
+                fontSize: typography.fontSize.base,
               }}
             >
               <LinkIcon size={16} />

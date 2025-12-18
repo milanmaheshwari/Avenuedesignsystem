@@ -1,5 +1,6 @@
 import React from 'react';
 import { imgEllipse1, imgHeart, imgEllipse2, imgEllipse3, imgEllipse4, imgHeart1, imgEllipse5 } from "../../imports/svg-3sol7";
+import { typography, semanticColors } from "../utils/theme";
 
 const img = "/assets/images/fac1b8921d7451f21cc3076e1e09e76dedf851f1.png";
 
@@ -109,9 +110,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-bold)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.bold,
                   fontSize: '16px',
                   lineHeight: '20px',
                   letterSpacing: '-0.32px',
@@ -123,9 +124,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-normal)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.normal,
                   fontSize: '14px',
                   lineHeight: '18px',
                 }}
@@ -196,7 +197,7 @@ export default function Card({
               bottom: '80px',
               left: '20px',
               fontSize: '120px',
-              fontFamily: 'var(--font-satoshi)',
+              fontFamily: typography.fontFamily.primary,
               fontWeight: '900',
               lineHeight: '120px',
               transform: 'translateY(50%)',
@@ -247,9 +248,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-bold)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.bold,
                   fontSize: '20px',
                   lineHeight: '24px',
                   letterSpacing: '-0.4px',
@@ -261,9 +262,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-normal)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.normal,
                   fontSize: '16px',
                   lineHeight: '22px',
                 }}
@@ -355,9 +356,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-bold)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.bold,
                   fontSize: '13px',
                   lineHeight: '16px',
                   letterSpacing: '-0.26px',
@@ -369,9 +370,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-normal)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.normal,
                   fontSize: '12px',
                   lineHeight: '16px',
                 }}
@@ -443,7 +444,7 @@ export default function Card({
               bottom: '42px',
               left: '12px',
               fontSize: '60px',
-              fontFamily: 'var(--font-satoshi)',
+              fontFamily: typography.fontFamily.primary,
               fontWeight: '900',
               lineHeight: '60px',
               transform: 'translateY(50%)',
@@ -494,9 +495,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-bold)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.bold,
                   fontSize: '13px',
                   lineHeight: '16px',
                   letterSpacing: '-0.26px',
@@ -508,9 +509,9 @@ export default function Card({
             <div className="flex flex-col justify-center relative shrink-0 w-full">
               <p 
                 style={{ 
-                  color: 'var(--primary-foreground)',
-                  fontFamily: 'var(--font-satoshi)',
-                  fontWeight: 'var(--font-weight-normal)',
+                  color: semanticColors.primaryForeground,
+                  fontFamily: typography.fontFamily.primary,
+                  fontWeight: typography.fontWeight.normal,
                   fontSize: '12px',
                   lineHeight: '16px',
                 }}
@@ -602,7 +603,7 @@ export default function Card({
             <p 
               style={{ 
                 color: 'var(--primary-foreground)',
-                fontFamily: 'var(--font-satoshi)',
+                fontFamily: typography.fontFamily.primary,
                 fontWeight: 'var(--font-weight-bold)',
                 fontSize: '20px',
                 lineHeight: '24px',
@@ -616,7 +617,7 @@ export default function Card({
             <p 
               style={{ 
                 color: 'var(--primary-foreground)',
-                fontFamily: 'var(--font-satoshi)',
+                fontFamily: typography.fontFamily.primary,
                 fontWeight: 'var(--font-weight-normal)',
                 fontSize: '16px',
                 lineHeight: '22px',

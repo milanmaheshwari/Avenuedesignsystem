@@ -4,6 +4,7 @@ import svgPathsIconsExtended from "../../imports/svg-gfwe8a44r6";
 import svgPathsMinimal from "../../imports/svg-v7lbe3aarf";
 import svgPathsBig from "../../imports/svg-kblll8k7vd";
 import svgPathsSmall from "../../imports/svg-zo2synpzn2";
+import { typography } from "../utils/theme";
 
 // Shared Logo components
 function LogoBig() {
@@ -164,16 +165,16 @@ export function TopbarDesktop() {
               </div>
               <div className="h-9 w-px bg-foreground opacity-10" />
               <button className="flex gap-1 items-center px-0 py-1 rounded-[999px] text-card-foreground hover:opacity-80 transition-opacity">
-                <span style={{ fontWeight: 'var(--font-weight-medium)' }}>New York</span>
+                <span style={{ fontWeight: typography.fontWeight.medium }}>New York</span>
                 <ChevronIcon />
               </button>
             </div>
 
             <div className="flex gap-1 items-center">
               <nav className="flex items-center px-2 py-[9px] rounded-[999px]">
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Find Events</a>
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Create Event</a>
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>My Events</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Find Events</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Create Event</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>My Events</a>
               </nav>
 
               <button 
@@ -182,7 +183,7 @@ export function TopbarDesktop() {
                   backgroundImage: "linear-gradient(90.0032deg, rgba(79, 70, 229, 0.05) 0%, rgba(79, 70, 229, 0.1) 50.01%, rgba(79, 70, 229, 0.05) 100%), url('data:image/svg+xml;utf8,<svg viewBox=\\'0 0 111 40\\' xmlns=\\'http://www.w3.org/2000/svg\\' preserveAspectRatio=\\'none\\'><rect x=\\'0\\' y=\\'0\\' height=\\'100%\\' width=\\'100%\\' fill=\\'url(%23grad)\\' opacity=\\'1\\'/><defs><radialGradient id=\\'grad\\' gradientUnits=\\'userSpaceOnUse\\' cx=\\'0\\' cy=\\'0\\' r=\\'10\\' gradientTransform=\\'matrix(25.745 0 0 9.2776 55.5 40)\\'><stop stop-color=\\'rgba(79,70,229,0.5)\\' offset=\\'0\\'/><stop stop-color=\\'rgba(79,70,229,0)\\' offset=\\'0.2524\\'/></radialGradient></defs></svg>'), linear-gradient(rgba(79, 70, 229, 0) 0%, rgba(79, 70, 229, 0.05) 100%)"
                 }}
               >
-                <span className="text-foreground" style={{ fontWeight: 'var(--font-weight-bold)' }}>Sign Up</span>
+                <span className="text-foreground" style={{ fontWeight: typography.fontWeight.bold }}>Sign Up</span>
                 <ArrowIcon />
                 <div className="absolute inset-0 pointer-events-none shadow-[inset_0px_0px_12px_0px_rgba(79,70,229,0.05),inset_0px_-8px_32px_0px_rgba(79,70,229,0.1)] rounded-[10px]" />
               </button>
@@ -374,16 +375,16 @@ export function TopbarDesktopSignup() {
               </div>
               <div className="h-9 w-px bg-foreground opacity-10" />
               <button className="flex gap-1 items-center px-0 py-1 rounded-[999px] text-card-foreground hover:opacity-80 transition-opacity">
-                <span style={{ fontWeight: 'var(--font-weight-medium)' }}>New York</span>
+                <span style={{ fontWeight: typography.fontWeight.medium }}>New York</span>
                 <ChevronIcon />
               </button>
             </div>
 
             <div className="flex gap-1 items-center">
               <nav className="flex items-center px-2 py-[9px] rounded-[999px]">
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Find Events</a>
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Create Event</a>
-                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>My Events</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Find Events</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Create Event</a>
+                <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>My Events</a>
               </nav>
 
               <button 
@@ -392,7 +393,7 @@ export function TopbarDesktopSignup() {
                   backgroundImage: "linear-gradient(90.0032deg, rgba(250, 250, 250, 0.05) 0%, rgba(250, 250, 250, 0.1) 50.01%, rgba(250, 250, 250, 0.05) 100%), url('data:image/svg+xml;utf8,<svg viewBox=\\'0 0 112 40\\' xmlns=\\'http://www.w3.org/2000/svg\\' preserveAspectRatio=\\'none\\'><rect x=\\'0\\' y=\\'0\\' height=\\'100%\\' width=\\'100%\\' fill=\\'url(%23grad)\\' opacity=\\'1\\'/><defs><radialGradient id=\\'grad\\' gradientUnits=\\'userSpaceOnUse\\' cx=\\'0\\' cy=\\'0\\' r=\\'10\\' gradientTransform=\\'matrix(25.977 0 0 9.2776 56 40)\\'><stop stop-color=\\'rgba(250,250,250,0.25)\\' offset=\\'0\\'/><stop stop-color=\\'rgba(250,250,250,0)\\' offset=\\'0.2524\\'/></radialGradient></defs></svg>'), linear-gradient(rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 0.05) 100%)"
                 }}
               >
-                <span className="text-foreground" style={{ fontWeight: 'var(--font-weight-bold)' }}>Sign Up</span>
+                <span className="text-foreground" style={{ fontWeight: typography.fontWeight.bold }}>Sign Up</span>
                 <ArrowIcon />
                 <div className="absolute inset-0 pointer-events-none shadow-[inset_0px_0px_12px_0px_rgba(250,250,250,0.05),inset_0px_-8px_32px_0px_rgba(250,250,250,0.05)] rounded-[12px]" />
               </button>
@@ -451,16 +452,16 @@ export function TopbarDesktopAuthenticated() {
               </div>
               <div className="h-9 w-px bg-foreground opacity-10" />
               <button className="flex gap-1 items-center px-0 py-1 rounded-[999px] text-card-foreground hover:opacity-80 transition-opacity">
-                <span style={{ fontWeight: 'var(--font-weight-medium)' }}>New York</span>
+                <span style={{ fontWeight: typography.fontWeight.medium }}>New York</span>
                 <ChevronIcon />
               </button>
             </div>
 
             <nav className="flex items-center px-2 py-[9px] rounded-[999px]">
-              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Find Events</a>
-              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Create Event</a>
-              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>My Events</a>
-              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Profile</a>
+              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Find Events</a>
+              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Create Event</a>
+              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>My Events</a>
+              <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: typography.fontWeight.medium }}>Profile</a>
             </nav>
           </div>
         </div>
@@ -515,7 +516,7 @@ export function TopbarMobileLocation() {
             </div>
 
             <button className="flex gap-1 items-center px-0 py-px rounded-[999px] text-card-foreground hover:opacity-80 transition-opacity">
-              <span style={{ fontWeight: 'var(--font-weight-medium)' }}>New York</span>
+              <span style={{ fontWeight: typography.fontWeight.medium }}>New York</span>
               <svg className="size-5" fill="none" viewBox="0 0 20 20">
                 <path d="M5 9.375L10 14.375L15 9.375" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.875" strokeOpacity="0.9" />
               </svg>

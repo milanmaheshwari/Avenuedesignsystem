@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from "../../utils/assets";
+import { typography } from "../utils/theme";
 import svgPathsMusicLarge from "../../imports/svg-30bgdzpzro";
 import svgPathsMusicSmall from "../../imports/svg-21ulgngdfx";
 import svgPathsNightLarge from "../../imports/svg-544wcgiqcd";
@@ -253,8 +254,8 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
             <p 
               style={{ 
                 color: config.textColor,
-                fontFamily: 'var(--font-satoshi)',
-                fontWeight: 'var(--font-weight-bold)',
+                fontFamily: typography.fontFamily.primary,
+                fontWeight: typography.fontWeight.bold,
                 fontSize: isLarge ? '24px' : '16px',
                 lineHeight: isLarge ? '28px' : '20px',
                 letterSpacing: isLarge ? '-0.48px' : '-0.32px',
@@ -270,8 +271,8 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
           <p 
             style={{ 
               color: config.textColor,
-              fontFamily: 'var(--font-satoshi)',
-              fontWeight: 'var(--font-weight-normal)',
+              fontFamily: typography.fontFamily.primary,
+              fontWeight: typography.fontWeight.normal,
               fontSize: isLarge ? '16px' : '13px',
               lineHeight: isLarge ? '22px' : '18px',
               width: isLarge && theme === 'music' ? '100%' : undefined,
