@@ -137,6 +137,7 @@ export default function ArtistCard({
             <div 
               className="flex flex-col justify-center relative shrink-0 w-full"
               style={{
+                fontFamily: 'var(--font-satoshi)',
                 fontWeight: 'var(--font-weight-bold)',
                 fontSize: config.titleSize,
                 lineHeight: config.titleLineHeight,
@@ -150,7 +151,8 @@ export default function ArtistCard({
             <div 
               className="flex flex-col justify-center relative shrink-0 w-full"
               style={{
-                fontWeight: 'var(--font-weight-regular)',
+                fontFamily: 'var(--font-satoshi)',
+                fontWeight: 'var(--font-weight-normal)',
                 fontSize: config.genreSize,
                 lineHeight: config.genreLineHeight,
               }}

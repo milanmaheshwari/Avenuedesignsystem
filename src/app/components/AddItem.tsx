@@ -91,6 +91,7 @@ export default function AddItem({
               <p 
                 style={{ 
                   color: 'rgba(250,250,250,0.9)',
+                  fontFamily: 'var(--font-satoshi)',
                   fontWeight: 'var(--font-weight-bold)',
                   fontSize: isLarge ? '16px' : '14px',
                   lineHeight: isLarge ? '20px' : '18px',
@@ -106,6 +107,7 @@ export default function AddItem({
               <p 
                 style={{ 
                   color: 'rgba(250,250,250,0.75)',
+                  fontFamily: 'var(--font-satoshi)',
                   fontWeight: 'var(--font-weight-medium)',
                   fontSize: isLarge ? '14px' : '13px',
                   lineHeight: '18px',
@@ -143,6 +145,7 @@ export default function AddItem({
                   <p 
                     style={{ 
                       color: 'var(--primary-foreground)',
+                      fontFamily: 'var(--font-satoshi)',
                       fontWeight: 'var(--font-weight-bold)',
                       fontSize: isLarge ? '16px' : '14px',
                       lineHeight: 1,

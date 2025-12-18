@@ -151,7 +151,7 @@ export default function Topbar({ className = "" }: TopbarProps) {
                 
                 {/* Location dropdown */}
                 <button className="flex gap-1 items-center px-0 py-1 rounded-[999px] text-card-foreground hover:opacity-80 transition-opacity">
-                  <span style={{ fontWeight: 'var(--font-weight-medium)' }}>New York</span>
+                  <span style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 'var(--font-weight-medium)' }}>New York</span>
                   <ChevronIcon />
                 </button>
               </div>
@@ -160,9 +160,9 @@ export default function Topbar({ className = "" }: TopbarProps) {
               <div className="flex gap-1 items-center">
                 {/* Navigation links */}
                 <nav className="flex items-center px-2 py-[9px] rounded-[999px]">
-                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Find Events</a>
-                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>Create Event</a>
-                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontWeight: 'var(--font-weight-medium)' }}>My Events</a>
+                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 'var(--font-weight-medium)' }}>Find Events</a>
+                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 'var(--font-weight-medium)' }}>Create Event</a>
+                  <a href="#" className="px-3 text-card-foreground hover:opacity-80 transition-opacity" style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 'var(--font-weight-medium)' }}>My Events</a>
                 </nav>
 
                 {/* Sign Up button */}
@@ -172,7 +172,7 @@ export default function Topbar({ className = "" }: TopbarProps) {
                     backgroundImage: "linear-gradient(90.0032deg, rgba(79, 70, 229, 0.05) 0%, rgba(79, 70, 229, 0.1) 50.01%, rgba(79, 70, 229, 0.05) 100%), url('data:image/svg+xml;utf8,<svg viewBox=\\'0 0 111 40\\' xmlns=\\'http://www.w3.org/2000/svg\\' preserveAspectRatio=\\'none\\'><rect x=\\'0\\' y=\\'0\\' height=\\'100%\\' width=\\'100%\\' fill=\\'url(%23grad)\\' opacity=\\'1\\'/><defs><radialGradient id=\\'grad\\' gradientUnits=\\'userSpaceOnUse\\' cx=\\'0\\' cy=\\'0\\' r=\\'10\\' gradientTransform=\\'matrix(25.745 0 0 9.2776 55.5 40)\\'><stop stop-color=\\'rgba(79,70,229,0.5)\\' offset=\\'0\\'/><stop stop-color=\\'rgba(79,70,229,0)\\' offset=\\'0.2524\\'/></radialGradient></defs></svg>'), linear-gradient(rgba(79, 70, 229, 0) 0%, rgba(79, 70, 229, 0.05) 100%)"
                   }}
                 >
-                  <span className="text-foreground" style={{ fontWeight: 'var(--font-weight-bold)' }}>Sign Up</span>
+                  <span className="text-foreground" style={{ fontFamily: 'var(--font-satoshi)', fontWeight: 'var(--font-weight-bold)' }}>Sign Up</span>
                   <ArrowIcon />
                   <div className="absolute inset-0 pointer-events-none shadow-[inset_0px_0px_12px_0px_rgba(79,70,229,0.05),inset_0px_-8px_32px_0px_rgba(79,70,229,0.1)] rounded-[10px]" />
                 </button>
@@ -213,22 +213,22 @@ export default function Topbar({ className = "" }: TopbarProps) {
                 <nav className="flex flex-col items-start pb-3 pt-2 w-full">
                   <a href="#" className="w-full rounded-[20px] hover:bg-[rgba(250,250,250,0.05)] transition-colors">
                     <div className="flex items-center px-3 py-[13px]">
-                      <span className="text-foreground">Find Events</span>
+                      <span className="text-foreground" style={{ fontFamily: 'var(--font-satoshi)' }}>Find Events</span>
                     </div>
                   </a>
                   <a href="#" className="w-full rounded-[20px] hover:bg-[rgba(250,250,250,0.05)] transition-colors">
                     <div className="flex items-center px-3 py-[13px]">
-                      <span className="text-foreground">Create Event</span>
+                      <span className="text-foreground" style={{ fontFamily: 'var(--font-satoshi)' }}>Create Event</span>
                     </div>
                   </a>
                   <a href="#" className="w-full rounded-[20px] hover:bg-[rgba(250,250,250,0.05)] transition-colors">
                     <div className="flex items-center px-3 py-[13px]">
-                      <span className="text-foreground">My Events</span>
+                      <span className="text-foreground" style={{ fontFamily: 'var(--font-satoshi)' }}>My Events</span>
                     </div>
                   </a>
                   <a href="#" className="w-full rounded-[20px] hover:bg-[rgba(250,250,250,0.05)] transition-colors">
                     <div className="flex items-center px-3 py-[13px]">
-                      <span className="text-foreground">Profile</span>
+                      <span className="text-foreground" style={{ fontFamily: 'var(--font-satoshi)' }}>Profile</span>
                     </div>
                   </a>
                 </nav>

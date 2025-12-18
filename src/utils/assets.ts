@@ -1,29 +1,65 @@
 /**
- * Asset Utility - Works in both Figma Make and Production
+ * Asset Utility - Production Ready with Unsplash Placeholders
  * 
- * This utility provides a centralized way to reference assets that works in:
- * - Figma Make environment (uses figma:asset virtual modules)
- * - Production builds (uses public asset paths)
+ * This utility provides centralized asset management that works for:
+ * - Vercel deployments
+ * - GitHub Pages
+ * - Any static hosting
  * 
- * HOW IT WORKS:
- * - In Figma Make: Import this file, it will use figma:asset imports
- * - In Production: The vite build process will replace with public paths
+ * CURRENT MODE: Using Unsplash placeholder images
+ * These images will work immediately when deployed to Vercel or GitHub Pages.
  * 
- * SETUP FOR PRODUCTION:
- * 1. Download images from Figma Make
- * 2. Save to /public/assets/images/
- * 3. Uncomment the PUBLIC_ASSETS section below
- * 4. Comment out the FIGMA_ASSETS section
+ * TO USE YOUR OWN IMAGES:
+ * 1. Save your PNG files to /public/assets/images/ with these exact names:
+ *    - category-music.png
+ *    - category-night-parties.png
+ *    - category-sports.png
+ *    - artist-music.png
+ *    - artist-comedy.png
+ *    - add-item-placeholder.png
+ * 2. The paths below will automatically use them
  * 
  * Usage:
  *   import { assets } from '../utils/assets';
- *   <img src={assets.categoryMusic} />
+ *   <img src={assets.categoryMusic} alt="Music" />
  */
 
 // ==========================================
-// FIGMA MAKE MODE (For Figma environment)
+// PRODUCTION MODE (Active)
 // ==========================================
-// Use this section when running in Figma Make
+// Using Unsplash images as placeholders - replace with your own images in /public/assets/images/
+
+export const assets = {
+  categoryMusic: "https://images.unsplash.com/photo-1567779013473-6cbdff716235?w=400&h=400&fit=crop",
+  categoryNightParties: "https://images.unsplash.com/photo-1657054711964-a0eb014c2df1?w=400&h=400&fit=crop",
+  categorySports: "https://images.unsplash.com/photo-1565483276060-e6730c0cc6a1?w=400&h=400&fit=crop",
+  artistMusic: "https://images.unsplash.com/photo-1693835742490-c0dc6e4889ce?w=400&h=400&fit=crop",
+  artistComedy: "https://images.unsplash.com/photo-1762537132884-cc6bbde0667a?w=400&h=400&fit=crop",
+  addItemPlaceholder: "https://images.unsplash.com/photo-1646038572815-43fe759e459b?w=400&h=400&fit=crop",
+};
+
+// ==========================================
+// TO USE LOCAL IMAGES FROM /public/assets/images/
+// ==========================================
+// Uncomment this section after placing your PNG files in /public/assets/images/
+// (And comment out the Unsplash URLs above)
+
+/*
+export const assets = {
+  categoryMusic: "/assets/images/category-music.png",
+  categoryNightParties: "/assets/images/category-night-parties.png",
+  categorySports: "/assets/images/category-sports.png",
+  artistMusic: "/assets/images/artist-music.png",
+  artistComedy: "/assets/images/artist-comedy.png",
+  addItemPlaceholder: "/assets/images/add-item-placeholder.png",
+};
+*/
+
+
+// ==========================================
+// FIGMA MAKE MODE (Disabled)
+// ==========================================
+// This was the original Figma Make import mode - no longer needed
 
 /*
 import imgCategoryMusic from "figma:asset/8b69c147bc89f3d328bd03bc1feec1e058214bd9.png";
@@ -42,18 +78,3 @@ export const assets = {
   addItemPlaceholder: imgAddItemPlaceholder,
 };
 */
-
-
-// ==========================================
-// PRODUCTION MODE (Current - Using Local Assets)
-// ==========================================
-// Using local images from public/assets/images/
-
-export const assets = {
-  categoryMusic: "/assets/images/category-music.png",
-  categoryNightParties: "/assets/images/category-night-parties.png",
-  categorySports: "/assets/images/category-sports.png",
-  artistMusic: "/assets/images/artist-music.png",
-  artistComedy: "/assets/images/artist-comedy.png",
-  addItemPlaceholder: "/assets/images/add-item-placeholder.png",
-};

@@ -18,7 +18,7 @@ export default function HomePage() {
       previewScale: 0.5,
     },
     {
-      name: "Category Cards",
+      title: "Category Cards",
       description: "Visual category navigation cards with multiple themes and sizes",
       path: "/components/category-cards",
       preview: <CategoryCard size="small" />,
