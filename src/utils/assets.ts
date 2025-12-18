@@ -29,14 +29,14 @@
 // ==========================================
 // Using Unsplash images as placeholders - replace with your own images in /public/assets/images/
 
-export const assets = {
+/*export const assets = {
   categoryMusic: "https://images.unsplash.com/photo-1567779013473-6cbdff716235?w=400&h=400&fit=crop",
   categoryNightParties: "https://images.unsplash.com/photo-1657054711964-a0eb014c2df1?w=400&h=400&fit=crop",
   categorySports: "https://images.unsplash.com/photo-1565483276060-e6730c0cc6a1?w=400&h=400&fit=crop",
   artistMusic: "https://images.unsplash.com/photo-1693835742490-c0dc6e4889ce?w=400&h=400&fit=crop",
   artistComedy: "https://images.unsplash.com/photo-1762537132884-cc6bbde0667a?w=400&h=400&fit=crop",
   addItemPlaceholder: "https://images.unsplash.com/photo-1646038572815-43fe759e459b?w=400&h=400&fit=crop",
-};
+};*/
 
 // ==========================================
 // TO USE LOCAL IMAGES FROM /public/assets/images/
@@ -44,7 +44,7 @@ export const assets = {
 // Uncomment this section after placing your PNG files in /public/assets/images/
 // (And comment out the Unsplash URLs above)
 
-/*
+
 export const assets = {
   categoryMusic: "/assets/images/category-music.png",
   categoryNightParties: "/assets/images/category-night-parties.png",
@@ -53,7 +53,7 @@ export const assets = {
   artistComedy: "/assets/images/artist-comedy.png",
   addItemPlaceholder: "/assets/images/add-item-placeholder.png",
 };
-*/
+
 
 
 // ==========================================

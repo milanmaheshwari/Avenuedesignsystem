@@ -242,7 +242,7 @@ export default function CategoryCard({ theme = 'music', size = 'large' }: Catego
           top: isLarge && theme === 'night-parties' ? '0' : isLarge && theme === 'sports' ? 'calc(50% - 112px)' : isLarge ? 'calc(50% - 112px)' : '0',
           transform: isLarge && theme === 'music' ? 'translateY(-50%)' : isLarge && theme === 'sports' ? 'translateY(-50%)' : 'none',
           zIndex: 2,
-          width: theme === 'music' ? (isLarge ? '156px' : '100%') : undefined,
+          width: theme === 'music' ? '100%' : undefined,
         }}
       >
         {/* Title */}
